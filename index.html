@@ -401,6 +401,40 @@
       border-radius: 6px;
       margin-bottom: 20px;
     }
+
+    /* Print button styling */
+    .print-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #4a89dc;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+
+    .print-button:hover {
+      background-color: #3a70b8;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Hide print button when printing */
+    @media print {
+      .print-button {
+        display: none;
+      }
+    }
   </style>
 </head>
 
@@ -795,6 +829,39 @@
       </div>
     </div>
   </div>
+
+  <button id="printButton" class="print-button" title="Print Resume">
+    <i class="fas fa-print"></i>
+  </button>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get reference to the print button
+      const printButton = document.getElementById("printButton");
+
+      // Function to handle the print action
+      function handlePrint() {
+        window.print();
+      }
+
+      // Add click event listener to the print button
+      printButton.addEventListener("click", handlePrint);
+
+      // Handle visibility when page is being shown for print preview
+      // and when returning from print preview
+      const mediaQueryList = window.matchMedia("print");
+      mediaQueryList.addEventListener("change", function (mql) {
+        if (mql.matches) {
+          // Entering print mode
+          printButton.style.display = "none";
+        } else {
+          // Exiting print mode
+          setTimeout(function () {
+            printButton.style.display = "flex";
+          }, 500); // Small delay to ensure proper rendering
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
