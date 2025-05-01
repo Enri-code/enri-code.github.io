@@ -2,456 +2,459 @@
 <html lang="en">
 
 <head>
-    <title>Eric Onyeulo - Senior Flutter Developer</title>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="description" content="Eric Onyeulo's Resume" />
-    <meta property="og:image" content="Developer Portfolio">
-    <meta property="og:site_name" content="Eric Onyeulo" />
-    <meta property="og:title" content="Eric Onyeulo" />
-    <meta property="og:url" content="https://enri-code.github.io/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Eric Onyeulo's Resume" />
-    <meta itemprop="name" content="Eric Onyeulo" />
-    <meta itemprop="url" content="https://enri-code.github.io/" />
-    <meta itemprop="description" content="Eric Onyeulo's Resume" />
-    <meta itemprop="thumbnailUrl" content="" />
-    <meta name="twitter:url" content="https://enri-code.github.io/" />
-    <meta name="twitter:title" content="Eric Onyeulo">
-    <meta name="twitter:description" content="Eric Onyeulo's Resume">
-    <meta name="twitter:card" content="summary" />
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-  
-        body {
-          font-family: "Poppins", sans-serif;
-          margin: 0;
-          padding: 0;
-          color: #2d3748;
-          line-height: 1.4;
-        }
-  
-        .resume-container {
-          max-width: 1100px;
-          min-width: 600px;
-          margin: auto;
-          padding: 32px;
-        }
-  
-        /* Improved header section with better integration */
-  
-        .header-section {
-          border-bottom: 2px solid #e2e8f0;
-          justify-content: space-between;
-          align-items: center;
-          padding-bottom: 20px;
-          margin-bottom: 25px;
-        }
-  
-        .header {
-          display: flex;
-        }
-  
-        .header-left {
-          flex: 3;
-        }
-  
-        .header-right {
-          flex: 1;
-        }
-  
-        /* Optional headshot styling */
-        .headshot {
-          width: 120px;
-          height: 120px;
-          border-radius: 50%;
-          background-color: #f0f7ff;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-left: auto;
-          border: 3px solid #4a89dc;
-          overflow: hidden;
-        }
-  
-        .headshot i {
-          font-size: 50px;
-          color: #4a89dc;
-        }
-  
-        .headshot img {
-          width: 100%;
-          object-fit: contain;
-        }
-  
-        /* Improved heading styles */
-        h1 {
-          margin: 0;
-          font-size: 36px;
-          color: #2a4d69;
-          font-weight: 700;
-        }
-  
-        .title {
-          font-size: 18px;
-          margin: 8px 0;
-          color: #4a5568;
-          font-weight: 500;
-        }
-  
-        .tag-line {
-          font-size: 14px;
-          color: #718096;
-          margin: 8px 0 16px;
-        }
-  
-        /* Enhanced contact info styling */
-        .contact-info {
-          gap: 16px;
-          margin-top: 16px;
-          text-align: center;
-        }
-  
-        .contact-info a {
-          color: #4a89dc;
-          text-decoration: none;
-          transition: all 0.2s ease;
-          border-radius: 4px;
-          padding: 4px 8px;
-          background-color: #f0f7ff;
-          font-size: 14px;
-        }
-  
-        .contact-info a:hover {
-          background-color: #e0efff;
-        }
-  
-        .contact-info i {
-          width: 20px;
-          text-align: center;
-          margin-right: 6px;
-          color: #4a89dc;
-        }
-  
-        /* Summary styling */
-        .summary {
-          background-color: #f8fafc;
-          padding: 8px 16px;
-          border-radius: 6px;
-          margin-bottom: 24px;
-          font-size: 15px;
-          color: #4a5568;
-          text-align: justify;
-          border-left: 4px solid #4a89dc;
-        }
-  
-        /* Improved column balance */
-        .columns {
-          display: flex;
-          gap: 40px;
-          margin-top: 16px;
-        }
-  
-        .left-column {
-          width: 60%; /* Adjusted from 60% */
-        }
-  
-        .right-column {
-          width: 40%; /* Adjusted from 40% */
-        }
-  
-        /* Better section headers */
-        h2 {
-          font-size: 22px;
-          color: #2a4d69;
-          border-bottom: 2px solid #4a89dc;
-          padding-bottom: 8px;
-          margin-top: 30px;
-          margin-bottom: 20px;
-        }
-  
-        /* Enhanced key achievements box */
-        .highlight-box {
-          background: #f0f7ff;
-          border-left: 4px solid #4a89dc;
-          padding: 2px 16px 6px;
-          border-radius: 0 8px 8px 0;
-          margin-bottom: 32px;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-        }
-  
-        .highlight-title {
-          color: #2a4d69;
-          font-weight: 600;
-          font-size: 16px;
-          margin-bottom: 12px;
-          display: flex;
-          align-items: center;
-        }
-  
-        .highlight-title:before {
-          content: "\f005";
-          font-family: "Font Awesome 5 Free";
-          font-weight: 900;
-          margin-right: 8px;
-          color: #4a89dc;
-        }
-  
-        /* Improved job section styling */
-        .job {
-          margin-bottom: 35px;
-          position: relative;
-          padding-left: 18px;
-          border-left: 2px solid #e2e8f0;
-        }
-  
-        .job-header {
-          position: relative;
-        }
-  
-        .job-header:before {
-          content: "";
-          position: absolute;
-          width: 12px;
-          height: 12px;
-          border-radius: 50%;
-          background: #4a89dc;
-          left: -25px;
-          top: 5px;
-          border: 2px solid white;
-        }
-  
-        .job-title {
-          font-size: 17px;
-          font-weight: 600;
-          color: #2a4d69;
-          margin-bottom: 4px;
-        }
-  
-        .job-company {
-          font-size: 14px;
-          color: #4a5568;
-          display: flex;
-          justify-content: space-between;
-          margin-bottom: 8px;
-          padding-bottom: 8px;
-          border-bottom: 1px dashed #e2e8f0;
-        }
-  
-        .tech-stack {
-          font-size: 13px;
-          font-style: italic;
-          color: #374c6d;
-          background-color: #f8fafc;
-          padding: 8px 12px;
-          border-radius: 4px;
-          margin-top: 12px;
-        }
-  
-        /* Better skill section organization */
-        .skills-section {
-          margin-bottom: 25px;
-          padding-bottom: 10px;
-        }
-  
-        .skills-section:not(:last-child) {
-          border-bottom: 1px solid #f0f0f0;
-        }
-  
-        .skills-header {
-          font-weight: 600;
-          color: #2a4d69;
-          margin-bottom: 10px;
-          font-size: 16px;
-          display: flex;
-          align-items: center;
-        }
-  
-        .skills-header:before {
-          content: "\f7d9";
-          font-family: "Font Awesome 5 Free";
-          font-weight: 900;
-          margin-right: 8px;
-          color: #4a89dc;
-          font-size: 14px;
-        }
-  
-        .skills-section ul {
-          list-style: none;
-          padding-left: 0;
-        }
-  
-        .skills-section li {
-          margin-bottom: 8px;
-          font-size: 14px;
-          position: relative;
-          padding-left: 15px;
-        }
-  
-        .skills-section li:before {
-          content: "\f054";
-          font-family: "Font Awesome 5 Free";
-          font-weight: 900;
-          position: absolute;
-          left: 0;
-          top: 2.5px;
-          color: #4a89dc;
-          font-size: 10px;
-        }
-  
-        /* Project list styling */
-        .project-item {
-          border-bottom: 1px dashed #e2e8f0;
-        }
-  
-        .project-item:last-child {
-          border-bottom: none;
-        }
-  
-        .project-title {
-          font-weight: 600;
-          color: #2a4d69;
-          margin-bottom: 0px;
-        }
-  
-        .project-description {
-          font-size: 13px;
-          margin: 3px 0;
-          color: #4a5568;
-        }
-  
-        .project-links {
-          display: flex;
-          gap: 10px;
-          font-size: 13px;
-        }
-  
-        .project-links a {
-          color: #4a89dc;
-          text-decoration: none;
-        }
-  
-        /* Education section improved */
-        .education {
-          margin-bottom: 32px;
-        }
-  
-        .degree {
-          font-weight: 500;
-          margin: 4px 0;
-          color: #2a4d69;
-        }
-  
-        .school {
-          margin: 4px 0;
-          color: #4a5568;
-        }
-  
-        /* Global utility classes */
-        .bold {
-          font-weight: 600;
-        }
-  
-        ul {
-          padding-left: 20px;
-          margin-top: 8px;
-        }
-  
-        li {
-          margin-bottom: 8px;
-          font-size: 14px;
-        }
-  
-        a {
-          color: #4a89dc;
-          text-decoration: none;
-        }
-  
-        /* Alternating section backgrounds */
-        .alt-bg {
-          background-color: #f8fafc;
-          padding: 15px;
-          border-radius: 6px;
-          margin-bottom: 20px;
-        }
-      </style>
-    </head>
-      <body>
-    <div class="resume-container">
-      <!-- Improved header section with better integration -->
-      <div class="header-section">
-        <div class="header">
-          <div class="header-left">
-            <h1>Eric Onyeulo</h1>
-            <p class="title">Senior Flutter Developer</p>
-            <p class="tag-line">
-              <span class="bold">6 years</span> Flutter •
-              <!-- 9+ years <span class="bold">Mobile development</span> • -->
-              <span class="bold">Cross-platform & Native</span> expert •
-              <span class="bold">Dart, Kotlin, Swift, JavaScript, C#</span>
-            </p>
-          </div>
-          <div class="header-right">
-            <!-- Optional placeholder for headshot -->
-            <div class="headshot">
-              <!-- <i class="fas fa-user"></i> -->
-              <img src="https://raw.githubusercontent.com/Enri-code/Enri-code/refs/heads/main/portfolioImage.jpeg" />
-            </div>
+  <title>Eric Onyeulo - Senior Flutter Developer</title>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="apple-touch-icon" href="/favicon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="description" content="Eric Onyeulo's Resume" />
+  <meta property="og:image" content="Developer Portfolio">
+  <meta property="og:site_name" content="Eric Onyeulo" />
+  <meta property="og:title" content="Eric Onyeulo" />
+  <meta property="og:url" content="https://enri-code.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Eric Onyeulo's Resume" />
+  <meta itemprop="name" content="Eric Onyeulo" />
+  <meta itemprop="url" content="https://enri-code.github.io/" />
+  <meta itemprop="description" content="Eric Onyeulo's Resume" />
+  <meta itemprop="thumbnailUrl" content="" />
+  <meta name="twitter:url" content="https://enri-code.github.io/" />
+  <meta name="twitter:title" content="Eric Onyeulo">
+  <meta name="twitter:description" content="Eric Onyeulo's Resume">
+  <meta name="twitter:card" content="summary" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #2d3748;
+      line-height: 1.4;
+    }
+
+    .resume-container {
+      max-width: 1100px;
+      min-width: 600px;
+      margin: auto;
+    }
+
+    /* Improved header section with better integration */
+
+    .header-section {
+      /* border-bottom: 2px solid #e2e8f0; */
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      /* margin-bottom: 20px; */
+    }
+
+    .header {
+      display: flex;
+    }
+
+    .header-left {
+      flex: 3;
+    }
+
+    .header-right {
+      flex: 1;
+    }
+
+    /* Optional headshot styling */
+    .headshot {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #f0f7ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      border: 3px solid #4a89dc;
+      overflow: hidden;
+    }
+
+    .headshot i {
+      font-size: 50px;
+      color: #4a89dc;
+    }
+
+    .headshot img {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    /* Improved heading styles */
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #2a4d69;
+      font-weight: 700;
+    }
+
+    .title {
+      font-size: 18px;
+      margin: 8px 0;
+      color: #4a5568;
+      font-weight: 500;
+    }
+
+    .tag-line {
+      font-size: 14px;
+      color: #718096;
+      margin: 8px 0 16px;
+    }
+
+    /* Enhanced contact info styling */
+    .contact-info {
+      gap: 16px;
+      margin-top: 16px;
+      /* text-align: center; */
+    }
+
+    .contact-info a {
+      color: #4a89dc;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border-radius: 4px;
+      padding: 4px 8px;
+      background-color: #f0f7ff;
+      font-size: 14px;
+    }
+
+    .contact-info a:hover {
+      background-color: #e0efff;
+    }
+
+    .contact-info i {
+      width: 20px;
+      text-align: center;
+      margin-right: 6px;
+      color: #4a89dc;
+    }
+
+    /* Summary styling */
+    .summary {
+      background-color: #f8fafc;
+      padding: 1px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #4a5568;
+      text-align: justify;
+      border-left: 4px solid #4a89dc;
+    }
+
+    /* Improved column balance */
+    .columns {
+      display: flex;
+      gap: 40px;
+    }
+
+    .left-column {
+      width: 60%;
+      /* Adjusted from 60% */
+    }
+
+    .right-column {
+      width: 40%;
+      /* Adjusted from 40% */
+    }
+
+    /* Better section headers */
+    h2 {
+      font-size: 22px;
+      color: #2a4d69;
+      border-bottom: 2px solid #4a89dc;
+      padding-bottom: 8px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    /* Enhanced key achievements box */
+    .highlight-box {
+      background: #f0f7ff;
+      border-left: 4px solid #4a89dc;
+      padding: 2px 16px 6px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 32px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .highlight-title {
+      color: #2a4d69;
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+    }
+
+    .highlight-title:before {
+      content: "\f005";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      margin-right: 8px;
+      color: #4a89dc;
+    }
+
+    /* Improved job section styling */
+    .job:last-child {
+      margin-bottom: 0;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    .job p:last-child {
+      margin: 0;
+    }
+
+    .job {
+      margin-bottom: 35px;
+      position: relative;
+      padding-left: 18px;
+      border-left: 2px solid #e2e8f0;
+    }
+
+    .job-header {
+      position: relative;
+    }
+
+    .job-header:before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #4a89dc;
+      left: -25px;
+      top: 5px;
+      border: 2px solid white;
+    }
+
+    .job-title {
+      font-size: 17px;
+      font-weight: 600;
+      color: #2a4d69;
+      margin-bottom: 4px;
+    }
+
+    .job-company,
+    .school-date {
+      font-size: 14px;
+      color: #4a5568;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed #e2e8f0;
+    }
+
+    .tech-stack {
+      font-size: 13px;
+      font-style: italic;
+      color: #374c6d;
+      background-color: #f8fafc;
+      padding: 8px 12px;
+      border-radius: 4px;
+      margin-top: 12px;
+    }
+
+    /* COMPACT SKILLS SECTION STYLING */
+    .skills-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .skills-category {
+      margin-bottom: 5px;
+    }
+
+    .skills-category-title {
+      color: #2a4d69;
+      font-weight: 600;
+      font-size: 15px;
+      margin: 0 0 6px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .skills-category-title i {
+      margin-right: 8px;
+      color: #4a89dc;
+      width: 14px;
+      text-align: center;
+    }
+
+    .skills-content {
+      margin-left: 22px;
+      line-height: 1.7;
+      /* color: #4a5568; */
+      font-size: 13px;
+    }
+
+    .skill-tag {
+      background-color: #eff7ff;
+      color: #2a4d69;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      display: inline-block;
+      margin: 0 8px 8px 0;
+    }
+
+    .skill-group-label {
+      font-weight: 600;
+      color: #4a5568;
+      margin-right: 5px;
+      font-size: 12px;
+    }
+
+    /* Project list styling */
+    .project-item {
+      /* border-bottom: 1px dashed #e2e8f0; */
+      padding-bottom: 6px;
+      margin-bottom: 6px;
+    }
+
+    .project-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .project-title {
+      font-weight: 600;
+      color: #2a4d69;
+      margin-bottom: 4px;
+      margin-top: 4px;
+    }
+
+    .project-description {
+      font-size: 13px;
+      margin: 3px 0;
+      color: #4a5568;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 16px;
+      font-size: 13px;
+    }
+
+    .project-links a {
+      color: #4a89dc;
+      text-decoration: none;
+    }
+
+    /* Education section improved */
+    .education {
+      margin-bottom: 32px;
+    }
+
+    .degree {
+      font-weight: 500;
+      margin: 4px 0;
+      color: #2a4d69;
+    }
+
+    .school {
+      margin: 4px 0;
+      color: #4a5568;
+    }
+
+    .school-date {
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    /* Global utility classes */
+    .bold {
+      font-weight: 600;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    a {
+      color: #4a89dc;
+      text-decoration: none;
+    }
+
+    /* Alternating section backgrounds */
+    .alt-bg {
+      background-color: #f8fafc;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="resume-container">
+    <!-- Improved header section with better integration -->
+    <div class="header-section">
+      <div class="header">
+        <div class="header-left">
+          <h1>Eric Onyeulo</h1>
+          <p class="title">Senior Flutter Developer</p>
+          <p class="tag-line">
+            <span class="bold">6 years</span> Flutter •
+            <span class="bold">Cross-platform & Native</span> expert
+            • <span class="bold">Dart, Kotlin, Swift, JS, C#</span>
+          </p>
+          <div class="contact-info">
+            <a href="mailto:onyeuloeric@gmail.com"><i class="far fa-envelope"></i> onyeuloeric@gmail.com</a>
+            <a href="https://linkedin.com/in/enri-code"><i class="fab fa-linkedin"></i> Linkedin/enri-code</a>
+            <a href="https://github.com/enri-code/"><i class="fab fa-github"></i> Github/enri-code</a>
+            <a href="https://drive.google.com/drive/folders/1-kGV0l5aEUQgszTh2O20qaEHVrrtD8bQ?usp=drive_link">
+              <i class="far fa-folder-open"></i> Project Demos
+            </a>
           </div>
         </div>
-        <div class="contact-info">
-          <a href="mailto:onyeuloeric@gmail.com"
-            ><i class="far fa-envelope"></i> onyeuloeric@gmail.com</a
-          >
-          <a href="https://linkedin.com/in/enri-code"
-            ><i class="fab fa-linkedin"></i> Linkedin/enri-code</a
-          >
-          <a href="https://github.com/enri-code/"
-            ><i class="fab fa-github"></i> Github/enri-code</a
-          >
-          <a
-            href="https://drive.google.com/drive/folders/1-kGV0l5aEUQgszTh2O20qaEHVrrtD8bQ?usp=drive_link">
-            <i class="far fa-folder-open"></i> Project Demos
-          </a>
+        <div class="header-right">
+          <div class="headshot">
+            <img src="https://raw.githubusercontent.com/Enri-code/Enri-code/refs/heads/main/portfolioImage.jpeg" />
+          </div>
         </div>
       </div>
+    </div>
 
-      <!-- Enhanced summary section -->
-      <div class="summary">
-        <p>
-          Over the last 6 years with Flutter, I’ve built, led, and delivered
-          <span class="bold">high-performance mobile apps</span> for
-          <span class="bold">A-level clients</span> and
-          <span class="bold">top global companies</span>. This has gained me
-          in-depth experience across various domains including
-          <span class="bold"
-            >FinTech, E-Commerce, Automotive Systems, Social Media</span
-          >
-          and <span class="bold">HealthTech</span>. My priority is always the
-          same;
-          <span class="bold">client satisfaction and exceptional results</span>.
-        </p>
-      </div>
+    <!-- Enhanced summary section -->
+    <div class="summary">
+      <p>
+        Over the last <span class="bold">6+ years with Flutter</span>, I've
+        delivered <span class="bold">high-performance apps</span> to
+        <span class="bold">A-level clients</span> and
+        <span class="bold">global companies</span>across various industries
+        including;
+        <span class="bold">Food, Social Media, Automotive, E-commerce</span> &
+        <span class="bold">Health</span>. My priority remains the same;
+        <span class="bold">client satisfaction and exceptional results</span>.
+      </p>
+    </div>
 
-      <div class="columns">
-        <div class="left-column">
-          <h2>Experience</h2>
-          <!-- Enhanced key achievements box -->
-          <div class="highlight-box">
+    <div class="columns">
+      <div class="left-column">
+        <h2>Work Experience</h2>
+        <!-- Enhanced key achievements box -->
+        <div class="highlight-box">
             <h4 class="highlight-title">Career Highlights</h4>
             <ul>
-              <li>
-                Delivered over
-                <span class="bold">20+ apps</span> to
-                <span class="bold">App & Play Store</span> with consistent
-                <span class="bold">4.5+ star ratings</span> and collective
-                <span class="bold">2,000,000+ downloads</span>
-              </li>
               <li>
                 Led a young team to build Tru.Store and SmartLiving, securing a
                 <span class="bold">€3 Million acquisition deal</span> from Togg
@@ -467,6 +470,19 @@
                 & iOS App Clip
               </li>
               <li>
+                Rebuilt the Rezme MVP from a buggy mess to a high-quality
+                version 1.0, ensuring a
+                <span class="bold">20% company acquisition</span>. This gained
+                me promotion to Lead developer
+              </li>
+              <li>
+                Delivered over
+                <span class="bold">20+ apps</span> to
+                <span class="bold">App & Play Store</span> with consistent
+                <span class="bold">4.5+ star ratings</span> and collective
+                <span class="bold">2,000,000+ downloads</span>
+              </li>
+              <li>
                 Worked with <span class="bold">Togg</span>,
                 <span class="bold">Volkswagen</span>,
                 <span class="bold">Porsche</span>, and other high-profile
@@ -475,353 +491,294 @@
             </ul>
           </div>
 
-          <!-- Improved job sections -->
-          <div class="job">
-            <div class="job-header">
-              <h3 class="job-title">Senior Flutter Developer</h3>
-              <div class="job-company">
-                <span>Y-Queue? - Contract | Nigeria</span
-                ><span>Nov 2024 – Apr 2025</span>
-              </div>
-              <ul>
-                <li>
-                  Led the development of the Y-Queue? mobile app available on
-                  Play & App Store, achieving
-                  <span class="bold"
-                    >4.7★ rating from 4,000+ users in first quarter</span
-                  >
-                </li>
-                <li>
-                  Built the
-                  <span class="bold">first-ever Flutter</span> Android Instant
-                  App & iOS App Clip, enabling customers to place orders before
-                  installing the app
-                </li>
-                <li>
-                  <span class="bold"
-                    >Built our CI/CD pipelines and extensive tests</span
-                  >, reducing duration of release procedures
-                  <span class="bold">from 24 hours to 30 minutes</span> while
-                  also catching 95% of bugs before release
-                </li>
-              </ul>
-              <p class="tech-stack">
-                <span class="bold">Top Skills:</span> Flutter, BLoC, Mockito,
-                Kotlin, Swift, Instant Apps, App Clips, Firebase, CI/CD,
-                Automated Tests
-              </p>
+        <!-- Improved job sections -->
+        <div class="job">
+          <div class="job-header">
+            <h3 class="job-title">Senior Flutter Developer</h3>
+            <div class="job-company">
+              <span>Y-Queue? - Contract | Nigeria</span><span>Nov 2024 – Apr 2025</span>
             </div>
-          </div>
-
-          <div class="job">
-            <div class="job-header">
-              <h3 class="job-title">Lead Mobile Developer</h3>
-              <div class="job-company">
-                <span>Kurero | United Kingdom</span
-                ><span>May 2023 – Dec 2024</span>
-              </div>
-              <ul>
-                <li>
-                  Mentored my team of 9 engineers on how to build
-                  enterprise-level software, and together we created a
-                  <span class="bold">voice-based social platform</span>
-                  which scaled flawlessly to
-                  <span class="bold">2,000+ users</span> within 8 weeks
-                </li>
-
-                <li>
-                  Developed our customised
-                  <span class="bold">deferred deep linking</span> system that
-                  saved Kurero over <span class="bold">$50,000</span> annually
-                  in expenses
-                </li>
-                <li>
-                  Delivered comprehensive feature suite including;
-                  <span class="bold"
-                    >offline-mode, AI assistance, smart notifications,
-                    subscriptions, audio management, real-time chat & calls, and
-                    robust app analytics</span
-                  >
-                  within tight deadlines
-                </li>
-              </ul>
-              <p class="tech-stack">
-                <span class="bold">Top Skills:</span> Flutter, HydratedBloc,
-                REST APIs, Agora, Firestore, FCM, Stripe, Sentry, AudioService,
-                Leadership, Mentorship
-              </p>
-            </div>
-          </div>
-
-          <div class="job">
-            <div class="job-header">
-              <h3 class="job-title">Senior Flutter Developer</h3>
-              <div class="job-company">
-                <span>Togg | Türkiye</span><span>Mar 2022 – Feb 2023</span>
-              </div>
-              <ul>
-                <li>
-                  Led a young team to build Tru.Store and SmartLiving, securing
-                  a
-                  <span class="bold">€3 Million acquisition deal</span> with
-                  Smart.iX
-                </li>
-                <li>
-                  Integrated <span class="bold">Flutter modules</span> into our
-                  car apps, pushing boundaries of in-vehicle UX capabilities
-                </li>
-                <li>
-                  Developed SmartLiving, real-time IoT control car & mobile app,
-                  <span class="bold"
-                    >using gRPC to ensure ~60ms response time</span
-                  >, meeting critical vehicle safety requirements
-                </li>
-                <li>
-                  Designed, Developed and Documented
-                  <span class="bold">car, mobile and web apps</span>
-                </li>
-              </ul>
-              <p class="tech-stack">
-                <span class="bold">Top Skills:</span> Flutter, Kotlin, gRPC,
-                IoT, AAOS, Automated Testing, Requirement Analysis, Analytical
-                Thinking, Stakeholder Management
-              </p>
-            </div>
-          </div>
-
-          <div class="job">
-            <div class="job-header">
-              <h3 class="job-title">Senior Flutter Developer</h3>
-              <div class="job-company">
-                <span>Rézme | United States</span
-                ><span>Aug 2019 – Apr 2022</span>
-              </div>
-              <ul>
-                <li>
-                  Rebuilt the mobile app from a buggy mess to a high-quality
-                  Rézme 1.0, ensuring a
-                  <span class="bold">20% company acquisition</span>. This gained
-                  me promotion to Lead developer
-                </li>
-                <li>
-                  Led my team to develop
-                  <span class="bold">Rézme 2.0</span>, built with Clean
-                  Architecture and best practices, enabling the app to
-                  <span class="bold">easily scale to 20K+ active users</span>
-                </li>
-              </ul>
-              <p class="tech-stack">
-                <span class="bold">Top Skills:</span> Flutter, Riverpod, MLKit,
-                Firebase Auth & Firestore, Clean Architecture, Automated
-                Testing, Collaboration & Decision-Making
-              </p>
-            </div>
+            <ul>
+              <li>
+                Led the development of the Y-Queue? mobile app available on
+                Play & App Store, achieving
+                <span class="bold">4.7★ rating from 4,000+ users in first quarter</span>
+              </li>
+              <li>
+                Built the
+                <span class="bold">first-ever Flutter</span> Android Instant
+                App & iOS App Clip, enabling customers to place orders before
+                installing the app
+              </li>
+            </ul>
+            <p class="tech-stack">
+              <span class="bold">Top Skills:</span> Flutter, Bloc, Mockito,
+              Kotlin, Swift, Instant Apps, App Clips, Firebase, CI/CD, Github
+              Actions, Automated Tests, DevTools
+            </p>
           </div>
         </div>
 
-        <div class="right-column">
-          <!-- Projects section with improved styling -->
-          <h2>Projects</h2>
-          <div class="skills-section">
-            <div class="project-item">
-              <p class="project-title"><i class="fas fa-car"></i> Trugo</p>
-              <p class="project-description">
-                Trugo provides a seamless charging ecosystem for your Electric
-                Vehicle (EV)
-              </p>
-              <p class="project-links">
-                <a href="https://apps.apple.com/ng/app/trugo/id6443913003">
-                  <i class="fab fa-apple"></i> App Store
-                </a>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.togg.trugoapp">
-                  <i class="fab fa-google-play"></i> Play Store
-                </a>
-              </p>
+        <div class="job">
+          <div class="job-header">
+            <h3 class="job-title">Lead Mobile Developer</h3>
+            <div class="job-company">
+              <span>Kurero | United Kingdom</span><span>May 2023 – Dec 2024</span>
             </div>
-            <div class="project-item">
-              <p class="project-title">
-                <i class="fas fa-utensils"></i> Y-Queue?
-              </p>
-              <p class="project-description">
-                A social, video-based food ordering and delivery app
-              </p>
-              <p class="project-links">
-                <a href="https://apps.apple.com/ng/app/y-queue/id6477296746">
-                  <i class="fab fa-apple"></i> App Store
-                </a>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.orbit.yqueue">
-                  <i class="fab fa-google-play"></i> Play Store
-                </a>
-              </p>
+            <ul>
+              <li>
+                Mentored my team of 9 engineers on how to build
+                enterprise-level software, and together we created a
+                <span class="bold">voice-based social platform</span>
+                which scaled flawlessly to
+                <span class="bold">2,000+ users</span> within 8 weeks
+              </li>
+              <li>
+                Saved Kurero over <span class="bold">$50,000</span> annually
+                in expenses by building our in-house
+                <span class="bold">deferred deep linking</span> solution
+              </li>
+              <li>
+                Delivered comprehensive feature suite including;
+                <span class="bold">offline-mode, AI assistance, smart notifications,
+                  subscriptions, audio management, real-time chat & calls, and
+                  robust app analytics</span>
+                within tight deadlines
+              </li>
+            </ul>
+            <p class="tech-stack">
+              <span class="bold">Top Skills:</span> Flutter, HydratedBloc,
+              REST, Agora, Firestore, FCM, Stripe, Sentry, AudioService
+            </p>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <h3 class="job-title">Senior Flutter Developer</h3>
+            <div class="job-company">
+              <span>Smart.iX | Türkiye</span><span>Mar 2022 – Feb 2023</span>
             </div>
-            <div class="project-item">
-              <p class="project-title">
-                <i class="fas fa-home"></i> Real Estate Demo
-              </p>
-              <p class="project-description">
-                Property marketplace with sleek animations and an interactive
-                map
-              </p>
-              <p class="project-links">
-                <a
-                  href="https://drive.google.com/file/d/1xX8UYLlCN3o2N_Cf586B7_-L3Iiq1K23/view?usp=drive_link">
-                  <i class="fas fa-video"></i> Video
-                </a>
-                <a href="https://github.com/Enri-code/real-estate-app">
-                  <i class="fab fa-github"></i> Source Code
-                </a>
-              </p>
+            <ul>
+              <li>
+                Led a young team to build Tru.Store and SmartLiving, securing
+                a
+                <span class="bold">€3 Million acquisition deal</span> with
+                Togg
+              </li>
+              <li>
+                Integrated <span class="bold">Flutter modules</span> into our
+                car apps, pushing boundaries of in-vehicle UX capabilities
+              </li>
+              <li>
+                Developed SmartLiving, real-time IoT control car & mobile app,
+                <span class="bold">using gRPC to ensure ~60ms response time</span>, meeting critical vehicle safety
+                requirements
+              </li>
+              <li>
+                Designed, Developed and Documented
+                <span class="bold">car, mobile and web apps</span> for Togg,
+                Porshe and Volkswagen
+              </li>
+            </ul>
+            <p class="tech-stack">
+              <span class="bold">Top Skills:</span> Flutter, Kotlin, gRPC,
+              IoT, AAOS, Automated Testing, Requirement Analysis, Code Reviews
+            </p>
+          </div>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <h3 class="job-title">Senior Flutter Developer</h3>
+            <div class="job-company">
+              <span>Rézme | United States</span><span>Aug 2019 – Apr 2022</span>
             </div>
-            <!-- <div class="project-item">
-              <p class="project-title"><i class="fas fa-wifi"></i> Fiber</p>
-              <p class="project-description">An inventory management app</p>
-              <p class="project-links">
-                <a href="https://apps.apple.com/ng/app/fiber/id1592719715">
-                  <i class="fab fa-apple"></i> App Store
-                </a>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.realpany.fiber">
-                  <i class="fab fa-google-play"></i> Play Store
-                </a>
-              </p>
-            </div> -->
-          </div>
-
-          <!-- Improved skills sections with icons and better organization -->
-          <h2>Skills</h2>
-          <div class="skills-section">
-            <p class="skills-header">Core Technologies</p>
-            <ul class="skills-list">
+            <ul>
               <li>
-                <span class="bold">Languages</span>: Dart, Kotlin, Java, Swift,
-                JavaScript, C#
+                Rebuilt the Rezme MVP from a buggy mess to a high-quality
+                version 1.0, ensuring a
+                <span class="bold">20% company acquisition</span>. This gained
+                me promotion to Lead developer
               </li>
               <li>
-                <span class="bold">Architecture</span>: SOLID, Clean
-                Architecture, MVVM
+                Led my team to develop
+                <span class="bold">Rézme 2.0</span>, built with Clean
+                Architecture and best practices, enabling the app to
+                <span class="bold">easily scale to 20K+ active users</span>
               </li>
               <li>
-                <span class="bold">Backend</span>: REST, gRPC, Firebase, AWS,
-                GraphQL
-              </li>
-              <li>
-                <span class="bold">Testing</span>: Mockito, Unit / Widget /
-                Integration tests
-              </li>
-              <li>
-                <span class="bold">Debugging</span>: DevTools, Profiler, Flutter
-                Inspector, Logging
-              </li>
-              <li>
-                <span class="bold">Security</span>: Biometrics, Data Encryption,
-                HIPAA, Apple Keychain, Android Keystore
-              </li>
-              <li>
-                <span class="bold">DevOps</span>: CI/CD, GitHub Actions,
-                Fastlane, App Store Connect API
+                <span class="bold">Built our CI/CD pipelines and extensive tests</span>, reducing duration of release
+                procedures
+                <span class="bold">from 24 hours to 30 minutes</span> while
+                also catching 95% of bugs before release
               </li>
             </ul>
-          </div>
-
-          <div class="skills-section">
-            <p class="skills-header">Flutter Expertise</p>
-            <ul class="skills-list">
-              <li>
-                <span class="bold">State Management</span>: BLoC, Riverpod,
-                Provider, Getx
-              </li>
-              <li>
-                <span class="bold">Local Storage</span>: SQFLite, ObjectBox,
-                Hive, SharedPreference
-              </li>
-              <li>
-                <span class="bold">Integration</span>: Third-Party Libraries,
-                Custom Packages, Platform Channels
-              </li>
-              <li>
-                <span class="bold">Performance</span>: Isolates, Threading,
-                Memory optimization
-              </li>
-              <li>
-                <span class="bold">UI/UX</span>: Custom animations, Responsive
-                layouts
-              </li>
-            </ul>
-          </div>
-
-          <div class="skills-section">
-            <p class="skills-header">Android Specialization</p>
-            <ul class="skills-list">
-              <li>
-                <span class="bold">UI</span>: Jetpack Compose, Material Design
-              </li>
-              <!-- <li>
-                <span class="bold">Libraries</span>: Retrofit, Dagger, Glide
-              </li> -->
-              <li>
-                <span class="bold">Databases</span>: SQLite, Realm, Firestore,
-                MySQL
-              </li>
-              <li>
-                <span class="bold">System</span>: Services, Intents, Broadcasts,
-                ContentProviders
-              </li>
-              <li>
-                <span class="bold">Tools</span>: Gradle, JUnit, ADB, LeakCanary
-              </li>
-            </ul>
-          </div>
-
-          <div class="skills-section">
-            <p class="skills-header">Professional Skills</p>
-            <ul class="skills-list">
-              <li>
-                Cross-cultural <span class="bold">Documentation</span> &
-                <span class="bold">Technical Writing</span>
-              </li>
-              <li>
-                Client <span class="bold">Communication</span> &
-                <span class="bold">Requirement Analysis</span>
-              </li>
-              <li>
-                Technical <span class="bold">Leadership</span> &
-                <span class="bold">Team Mentoring</span>
-              </li>
-              <li>
-                <span class="bold">Collaboration</span> &
-                <span class="bold">Stakeholder Management</span>
-              </li>
-              <li>
-                Strategic <span class="bold">Problem-solving</span> &
-                <span class="bold">Analytical Thinking</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Language section -->
-          <!-- <div class="skills-section">
-            <h2>Languages</h2>
-            <ul class="skills-list">
-              <li><span class="bold">English</span>: Native proficiency</li>
-              <li>
-                <span class="bold">German</span>: Professional working
-                proficiency
-              </li>
-            </ul>
-          </div> -->
-
-          <!-- Education section -->
-          <div class="education">
-            <h2>Education</h2>
-            <p class="degree">Bachelor of Science, Computer Science</p>
-            <p class="school">
-              <span class="bold">University of Nigeria</span>
+            <p class="tech-stack">
+              <span class="bold">Top Skills:</span> Flutter, Riverpod, MLKit,
+              Firebase Auth, Firestore, Clean Architecture, Agile,
             </p>
           </div>
         </div>
       </div>
+
+      <div class="right-column">
+        <!-- Projects section with improved styling -->
+        <h2>Featured Projects</h2>
+        <div class="project-item">
+          <p class="project-title"><i class="fas fa-car"></i> Trugo</p>
+          <p class="project-description">
+            Trugo provides a seamless charging ecosystem for your E.V.
+          </p>
+          <p class="project-links">
+            <a href="https://apps.apple.com/ng/app/trugo/id6443913003">
+              <i class="fab fa-apple"></i> App Store
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.togg.trugoapp">
+              <i class="fab fa-google-play"></i> Play Store
+            </a>
+          </p>
+        </div>
+        <div class="project-item">
+          <p class="project-title">
+            <i class="fas fa-utensils"></i> Y-Queue?
+          </p>
+          <p class="project-description">
+            A social, video-based food ordering and delivery app
+          </p>
+          <p class="project-links">
+            <a href="https://apps.apple.com/ng/app/y-queue/id6477296746">
+              <i class="fab fa-apple"></i> App Store
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.orbit.yqueue">
+              <i class="fab fa-google-play"></i> Play Store
+            </a>
+          </p>
+        </div>
+
+        <!-- COMPACT SKILLS SECTION -->
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <!-- Programming Languages -->
+          <div class="skills-category">
+            <h3 class="skills-category-title">
+              <i class="fas fa-code"></i> Programming Languages
+            </h3>
+            <div class="skills-content">
+              <span class="skill-tag">Dart</span>
+              <span class="skill-tag">Kotlin</span>
+              <span class="skill-tag">Swift</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">C#</span>
+            </div>
+          </div>
+
+          <!-- Flutter Expertise -->
+          <div class="skills-category">
+            <h3 class="skills-category-title">
+              <i class="fas fa-mobile-alt"></i> Flutter Expertise
+            </h3>
+            <div class="skills-content">
+              <div class="skill-group">
+                <span class="skill-group-label">State:</span>
+                <span class="skill-tag">Bloc/Cubit</span>
+                <span class="skill-tag">Riverpod</span>
+                <span class="skill-tag">Redux</span>
+                <span class="skill-tag">Provider</span>
+              </div>
+              <div class="skill-group">
+                <span class="skill-group-label">UI/UX:</span>
+                <span class="skill-tag">Canvas</span>
+                <span class="skill-tag">Animations</span>
+                <span class="skill-tag">Responsive Layouts</span>
+              </div>
+              <span class="skill-tag">Payments Integration, In-App purchases, Subscriptions</span>
+              <span class="skill-tag">Push & Local Notifications</span>
+              <span class="skill-tag">Maps & Geolocation</span>
+              <span class="skill-tag">Package Development</span>
+              <span class="skill-tag">Third-Party Libraries</span>
+              <span class="skill-tag">Local Storage & Caching</span>
+              <span class="skill-tag">Debugging, DevTools, Inspector</span>
+            </div>
+          </div>
+
+          <!-- Architecture & Backend -->
+          <div class="skills-category">
+            <h3 class="skills-category-title">
+              <i class="fas fa-layer-group"></i> Architecture & Backend
+            </h3>
+            <div class="skills-content">
+              <div class="skill-group">
+                <span class="skill-group-label">Architecture:</span>
+                <!-- <span class="skill-tag">Clean Arch</span> -->
+                <span class="skill-tag">SOLID</span>
+                <span class="skill-tag">MVVM</span>
+                <span class="skill-tag">Repository Pattern</span>
+              </div>
+              <div class="skill-group">
+                <span class="skill-group-label">Testing:</span>
+                <span class="skill-tag">Unit</span>
+                <span class="skill-tag">Widget / UI</span>
+                <span class="skill-tag">Integration</span>
+                <!-- <span class="skill-tag">CI/CD</span> -->
+              </div>
+              <div class="skill-group">
+                <span class="skill-group-label">APIs:</span>
+                <span class="skill-tag">REST</span>
+                <span class="skill-tag">gRPC</span>
+                <span class="skill-tag">GraphQL</span>
+                <span class="skill-tag">Firebase</span>
+              </div>
+              <span class="skill-tag">CI/CD & DevOps</span>
+              <span class="skill-tag">Data Structures</span>
+              <span class="skill-tag">Algorithms</span>
+            </div>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="skills-category">
+            <h3 class="skills-category-title">
+              <i class="fas fa-drafting-compass"></i> Technical Skills
+            </h3>
+            <div class="skills-content">
+              <span class="skill-tag">Agile</span>
+              <span class="skill-tag">Project Management</span>
+              <span class="skill-tag">Code Refactoring</span>
+
+              <span class="skill-tag">Code Reviews and Collaboration</span>
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Solid understanding of UI/UX Design</span>
+            </div>
+          </div>
+
+          <!-- Professional Skills -->
+          <div class="skills-category">
+            <h3 class="skills-category-title">
+              <i class="fas fa-user-tie"></i> Professional Skills
+            </h3>
+            <div class="skills-content">
+              <span class="skill-tag">Team Leadership</span>
+              <span class="skill-tag">Mentoring</span>
+              <span class="skill-tag">Documentation</span>
+              <span class="skill-tag">Client Communication</span>
+              <span class="skill-tag">Requirement Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education section -->
+        <div class="education">
+          <h2>Education</h2>
+          <p class="degree">Bachelor of Science, Computer Science</p>
+          <p class="school">
+            <span class="bold">University of Nigeria</span>
+            <span class="school-date">Aug 2019 – Apr 2022</span>
+          </p>
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
